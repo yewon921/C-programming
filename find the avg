@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(void) {
+
+	int i=0;
+	int num;
+	float x;
+	float result = 0;
+	printf("몇 개의 정수를 입력할것인가? : ");
+	scanf("%d", &num);
+
+	while (i < num) {
+		printf("정수를 입력하시오 : ");
+		scanf("%f", &x);
+		result += x;
+		i++;
+	}
+
+	printf("입력받은 정수의 평균은 %f 입니다 \n",result/num);
+
+	return 0;
+
+}
