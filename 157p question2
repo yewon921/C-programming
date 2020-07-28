@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(void) {
+
+	int star = 0, zero = 0;
+	int result = 0;
+
+	while (star < 5) {
+		while (zero>0) {
+			printf("o ");
+			zero--;
+		}//여기 통과하면 zero값은 전부 0 됨
+		zero = result;
+		printf("* \n");
+		star++;
+		zero++;
+		result = zero;
+	}
+	return 0;
+}
